@@ -4,3 +4,44 @@ body
     background-image: url(../img/bokeh.jpg);
     background-size: 100%;
  }
+
+ .nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(233, 159, 177, 0.25);
+    border-radius: 10px;
+    height: 60px;
+         
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+
+    /*https://www.youtube.com/watch?v=FEmysQARWFU helped to fix div background color dissapearing after changing the float of nav bar items, by using css pseudo ::after element */
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    float: right;
+    display: flex;
+
+    /* used link below to learn how to fix nav bar links being in th wrong order 
+    https://stackoverflow.com/questions/67432376/why-are-the-nav-bar-links-in-the-wrong-order */
+    
+}
+
+nav li {
+   float: right;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 40px;
+   padding-right: 40px;
+   text-align: center;
+   font-weight: 500;
+}
