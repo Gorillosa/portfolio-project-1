@@ -31,8 +31,7 @@ nav ul {
     float: right;
     display: flex;
 
-    /* used link below to learn how to fix nav bar links being in th wrong order 
-    https://stackoverflow.com/questions/67432376/why-are-the-nav-bar-links-in-the-wrong-order */
+    /* used link below to learn how to fix nav bar elements being in th wrong order https://stackoverflow.com/questions/67432376/why-are-the-nav-bar-links-in-the-wrong-order */
     
 }
 
@@ -44,4 +43,93 @@ nav li {
    padding-right: 40px;
    text-align: center;
    font-weight: 500;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(233, 38, 103);
+    font-size: 20px;
+
+    position: relative;
+}
+
+/*https://www.youtube.com/watch?v=FEmysQARWFU used this video to make a hover over animation using pseudo class elements */
+
+nav a:hover {
+    color: white;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px; 
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+
+}
+
+#hi {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    padding: 5px;
+    size: 300px;
+    text-align: center;
+       
+    /* used a code from https://blog.hubspot.com/website/center-div-css to center the div on the page 
+    used a tip from https://www.tutorialrepublic.com/faq/css-background-opacity-without-effecting-the-child-elements.php to fix background opacity withouth aftecting text */
+
+    font-family: Calibri; 
+    font-size: 50px;
+    font-weight: 350;
+    color: rgb(233, 38, 103);
+    background-color: rgba(233, 159, 177, 0.25);
+    border-radius: 10px;
+    height: 300px;
+    
+}
+
+#firstline {
+    font-family: Calibri;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+}
+
+.flex-container {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    right: 40%;
+    width: 20%;
+    height: 50px;
+    background-color: rgba(233, 159, 177, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    height: 50px;
+    background-color: rgba(233, 159, 177, 0.25);
+    border-radius: 10px;
 }
