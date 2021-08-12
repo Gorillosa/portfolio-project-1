@@ -1,17 +1,17 @@
 body
 
  {
-    background-image: url(../img/bokeh.jpg);
+    background-image: url(../img/background.jpg);
     background-size: 100%;
  }
 
- .nav {
+.nav {
     width: 90%;
     margin: 0 auto;
 }
 
 header {
-    background-color: rgba(233, 159, 177, 0.25);
+    background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
     height: 60px;
          
@@ -46,7 +46,7 @@ nav li {
 }
 nav a {
     text-decoration: none;
-    color: rgb(233, 38, 103);
+    color:  rgb(65, 60, 61);
     font-size: 20px;
     position: relative;
 }
@@ -54,14 +54,14 @@ nav a {
 /*https://www.youtube.com/watch?v=FEmysQARWFU used this video to make a hover over animation using pseudo class elements */
 
 nav a:hover {
-    color: white;
+    color: rgb(203, 206, 65);
 }
 
 nav a::before {
     content: '';
     display: block;
     height: 3px; 
-    background-color: white;
+    background-color: rgb(203, 206, 65);
 
     position: absolute;
     top: 0;
@@ -74,7 +74,7 @@ nav a:hover::before {
 
 }
 
-#hi {
+#intro {
     position: absolute;
     top: 30%;
     left: 30%;
@@ -83,25 +83,23 @@ nav a:hover::before {
     padding: 5px;
     size: 300px;
     text-align: center;
-       
     /* used a code from https://blog.hubspot.com/website/center-div-css to center the div on the page 
     used a tip from https://www.tutorialrepublic.com/faq/css-background-opacity-without-effecting-the-child-elements.php to fix background opacity withouth aftecting text */
-
     font-family: Calibri; 
     font-size: 50px;
     font-weight: 350;
-    color: rgb(233, 38, 103);
-    background-color: rgba(233, 159, 177, 0.25);
+    color:  rgb(65, 60, 61);
+    background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
     height: 300px;
     
 }
 
-#firstline {
+span {
     font-family: Calibri;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 400;
-    color: white;
+    color: rgb(203, 206, 65);
     text-align: left;
 }
 
@@ -112,7 +110,7 @@ nav a:hover::before {
     right: 40%;
     width: 20%;
     height: 50px;
-    background-color: rgba(233, 159, 177, 0.25);
+    background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -137,18 +135,34 @@ nav a:hover::before {
 .about {
     height: 600px;
     width: 400px;
-    background-color: rgba(233, 159, 177, 0.25);
+    background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
-    padding: 20px;       
+    padding: 20px;
+    border: rgb(65, 60, 61) solid 1px;       
 }
 
 .img-about {
     height: 600px;
     width: 400px;
-    background-color: rgba(233, 159, 177, 0.25);
+    background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
     padding: 20px;
     background-image: url(../img/img-about.jpg);
+    border: rgb(65, 60, 61) solid 1px;
+}
+
+#about-me {
+    font-family: Calibri; 
+    font-size: 20px;
+    color:  rgb(65, 60, 61);
+    text-align: justify;
+}
+
+.about-skills {
+    font-family: Calibri; 
+    font-size: 20px;
+    color: rgb(65, 60, 61);
+    margin: 20px;
 }
 
 footer {
@@ -158,9 +172,9 @@ footer {
     right: 30%;
     width: 40%;
     height: 20px;
-    background-color: rgba(233, 159, 177, 0.25);
+    background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
-    color: white;
+    color: rgb(65, 60, 61);
     text-align: center;
     font-size: 16px;
     font-family: Calibri;
