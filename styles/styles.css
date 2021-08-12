@@ -82,7 +82,8 @@ nav a:hover::before {
     width: 40%;
     padding: 5px;
     size: 300px;
-    text-align: center;
+    text-align: left;
+    padding-left: 15px;
     /* used a code from https://blog.hubspot.com/website/center-div-css to center the div on the page 
     used a tip from https://www.tutorialrepublic.com/faq/css-background-opacity-without-effecting-the-child-elements.php to fix background opacity withouth aftecting text */
     font-family: Calibri; 
