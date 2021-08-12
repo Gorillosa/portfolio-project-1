@@ -48,7 +48,6 @@ nav a {
     text-decoration: none;
     color: rgb(233, 38, 103);
     font-size: 20px;
-
     position: relative;
 }
 
@@ -106,7 +105,7 @@ nav a:hover::before {
     text-align: left;
 }
 
-.flex-container {
+.flex-container-home {
     position: absolute;
     top: 65%;
     left: 40%;
@@ -121,6 +120,27 @@ nav a:hover::before {
     justify-content: center;
     align-items: center;
     justify-content: space-around;
+}
+
+.flex-container-about {
+    position: relative;
+    height: 700px;
+    width: 91%;
+    padding: 80px;
+    align-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about {
+    height: 600px;
+    width: 400px;
+    background-color: rgba(233, 159, 177, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    
 }
 
 footer {
