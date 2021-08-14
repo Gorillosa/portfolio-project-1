@@ -124,8 +124,8 @@ span {
 .flex-container-about {
     position: relative;
     height: 700px;
-    width: 91%;
-    padding: 80px;
+    width: 96%;
+    padding: 40px;
     align-content: center;
     display: inline-flex;
     flex-direction: row;
@@ -164,6 +164,26 @@ span {
     font-size: 20px;
     color: rgb(65, 60, 61);
     margin: 20px;
+}
+.flex-container-portfolio {
+    position: relative;
+    height: 700px;
+    width: 98%;
+    padding: 20px;
+    align-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio {
+    height: 300px;
+    width: 450px;
+    background-color: rgba(50, 100, 67, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    border: rgb(65, 60, 61) solid 1px;       
 }
 
 footer {
