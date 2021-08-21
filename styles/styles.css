@@ -14,6 +14,7 @@ header {
     background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
     height: 60px;
+    box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);
          
 }
 
@@ -82,16 +83,14 @@ nav a:hover::before {
     width: 40%;
     padding: 5px;
     size: 300px;
-    text-align: left;
+    text-align: center;
     padding-left: 15px;
     /* used a code from https://blog.hubspot.com/website/center-div-css to center the div on the page 
     used a tip from https://www.tutorialrepublic.com/faq/css-background-opacity-without-effecting-the-child-elements.php to fix background opacity withouth aftecting text */
     font-family: Calibri; 
     font-size: 50px;
     font-weight: 350;
-    color:  rgb(65, 60, 61);
-    background-color: rgba(50, 100, 67, 0.25);
-    border-radius: 10px;
+
     height: 300px;
     
 }
@@ -139,7 +138,7 @@ span {
     background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
     padding: 20px;
-    border: rgb(65, 60, 61) solid 1px;       
+    box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);       
 }
 
 .img-about {
@@ -149,7 +148,7 @@ span {
     border-radius: 10px;
     padding: 20px;
     background-image: url(../img/img-about.jpg);
-    border: rgb(65, 60, 61) solid 1px;
+    box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);
 }
 
 #about-me {
@@ -183,7 +182,7 @@ span {
     background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
     padding: 20px;
-    border: rgb(65, 60, 61) solid 1px;       
+    box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);       
 }
 
 .flex-container-contact {
@@ -203,7 +202,8 @@ span {
     font-family: Calibri; 
     font-size: 20px;
     color:  rgb(65, 60, 61);
-}
+    box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);
+} 
 
 .contact-me {
     display: flex;
@@ -260,4 +260,5 @@ footer {
     text-align: center;
     font-size: 16px;
     font-family: Calibri;
+    box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);
 }
