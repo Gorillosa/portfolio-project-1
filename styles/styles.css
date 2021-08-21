@@ -14,8 +14,7 @@ header {
     background-color: rgba(50, 100, 67, 0.25);
     border-radius: 10px;
     height: 60px;
-    box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);
-         
+    box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);      
 }
 
 header::after {
@@ -31,6 +30,8 @@ nav ul {
     list-style: none;
     float: right;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
     /* fixed nav bar elements being in th wrong order https://stackoverflow.com/questions/67432376/why-are-the-nav-bar-links-in-the-wrong-order */
     
@@ -90,7 +91,6 @@ nav a:hover::before {
     font-family: Calibri; 
     font-size: 50px;
     font-weight: 350;
-
     height: 300px;
     
 }
@@ -100,7 +100,6 @@ span {
     font-size: 60px;
     font-weight: 400;
     color: rgb(189, 8, 8);
-    text-align: left;
 }
 
 .flex-container-home {
@@ -185,6 +184,8 @@ span {
     box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);       
 }
 
+/* https://www.youtube.com/watch?v=Db5jCkrVgAw responsive contact form */
+
 .flex-container-contact {
     position: absolute;
     display:flex;
@@ -261,4 +262,30 @@ footer {
     font-size: 16px;
     font-family: Calibri;
     box-shadow: 0px 0px 5px 1px rgb(128, 121, 122);
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 900px) {
+    header {
+        height: 40px;
+    }
+
+    nav ul li a {
+        
+        font-size: 14px;
+        display: flex;
+        align-content: space-around;
+        wrap: nowrap;
+
+    }
+
+    #intro {
+        font-size: 30px;
+    }
+    span {
+        font-size: 35px;
+    }
+
+
 }
