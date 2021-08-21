@@ -186,6 +186,22 @@ span {
     border: rgb(65, 60, 61) solid 1px;       
 }
 
+.flex-container-contact {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    height: 80%;
+    width: 70%;
+    background-color: rgba(50, 100, 67, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
 footer {
     position: absolute;
     top: 95%;
